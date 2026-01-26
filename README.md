@@ -55,4 +55,3 @@ Click the badge below to get in touch:
 ## Included Files
 - `EmailCampaignManager.exe` — portable app.
 - `TemplateCSV.csv` — ready-to-use contact template.
-- `backend/` — source code and build scripts (for developers).
