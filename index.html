@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Campaign Manager – Knowledge Base</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./template/style.css">
+</head>
+
+<body>
+  <div class="kb-navigation-buttons">
+    <a href="https://giovyangy.github.io/Lebenlauf/index.html" class="kb-nav-btn">
+      <span class="kb-btn-icon">🏠</span>
+      <span class="kb-btn-text">Home</span>
+    </a>
+    <a href="https://github.com/giovyangy" target="_blank" class="kb-nav-btn">
+      <span class="kb-btn-icon">🐙</span>
+      <span class="kb-btn-text">GitHub</span>
+    </a>
+    <a href="https://github.com/GiovyAngy/Email-Marketing-SourceCode/archive/main.zip" target="_blank" class="kb-nav-btn">
+      <span class="kb-btn-icon">⬇️</span>
+      <span class="kb-btn-text">Download</span>
+    </a>
+  </div>
+  <div class="kb-container">
+    <!-- Navigation Sidebar -->
+    <aside class="kb-sidebar">
+      <h2 data-key="kb_nav_title">Sections</h2>
+      <ul class="kb-nav-list">
+        <li><a href="#" class="kb-nav-link active" data-section="intro" data-key="kb_nav_intro">Introduction</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="quickstart" data-key="kb_nav_quickstart">Quick Start</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="campaigns" data-key="kb_nav_campaigns">Campaign Manager</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="templates" data-key="kb_nav_templates">Templates</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="abtesting" data-key="kb_nav_abtesting">A/B Testing</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="scheduling" data-key="kb_nav_scheduling">Scheduling</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="contacts" data-key="kb_nav_contacts">Import Contacts</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="smtp" data-key="kb_nav_smtp">SMTP Setup</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="compose" data-key="kb_nav_compose">Compose Message</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="send" data-key="kb_nav_send">Send Campaign</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="security" data-key="kb_nav_security">Security</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="troubleshooting" data-key="kb_nav_troubleshooting">Troubleshooting</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="support" data-key="kb_nav_support">Support</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="kb-main">
+      <header class="kb-header">
+        <h1 data-key="kb_title">Email Campaign Manager Knowledge Base</h1>
+        <div class="lang-switcher-kb">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="it">IT</button>
+        </div>
+      </header>
+
+      <!-- Section: Introduction -->
+      <section id="section-intro" class="kb-section active">
+        <h2 data-key="kb_intro_title">Introduction</h2>
+        <p data-key="kb_intro_desc">Email Campaign Manager v1.4 is a powerful desktop application for sending beautiful, personalized email campaigns. Manage campaigns, schedule sends, run A/B tests, and use advanced templates - all in one professional tool!</p>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <h3 data-key="kb_features_title">Key Features</h3>
+            <h4 data-key="kb_template_engine_title">🎨 Template Engine (v1.4)</h4>
+            <ul>
+              <li data-key="kb_feature_template_vars">Advanced variables with Jinja2 syntax</li>
+              <li data-key="kb_feature_template_conditions">Conditional content support</li>
+              <li data-key="kb_feature_template_library">Template library for reuse</li>
+              <li data-key="kb_feature_template_preview">Real-time preview with CSV data</li>
+              <li data-key="kb_feature_template_validation">Syntax validation</li>
+            </ul>
+            <h4 data-key="kb_abtesting_title">🧪 A/B Testing (v1.3)</h4>
+            <ul>
+              <li data-key="kb_feature_ab_split">Custom split ratios</li>
+              <li data-key="kb_feature_ab_variants">Different subjects and content</li>
+              <li data-key="kb_feature_ab_preview">Side-by-side variant preview</li>
+              <li data-key="kb_feature_ab_tracking">Separate tracking for variants</li>
+            </ul>
+            <h4 data-key="kb_scheduling_title">⏰ Scheduling & Throttling (v1.2)</h4>
+            <ul>
+              <li data-key="kb_feature_schedule">Schedule campaigns for future delivery</li>
+              <li data-key="kb_feature_timezone">Timezone support (UTC, CET, EST, PST, JST, AEST)</li>
+              <li data-key="kb_feature_ratelimit">Rate limiting (0-60 emails/min)</li>
+              <li data-key="kb_feature_pause">Pause/Resume campaigns</li>
+              <li data-key="kb_feature_resume">Auto-resume after crashes</li>
+            </ul>
+            <h4 data-key="kb_campaigns_title">📊 Campaign Manager (v1.1)</h4>
+            <ul>
+              <li data-key="kb_feature_organize">Organize with names, tags, and notes</li>
+              <li data-key="kb_feature_status">Track status (Draft, Scheduled, Sent)</li>
+              <li data-key="kb_feature_search">Search and filter campaigns</li>
+              <li data-key="kb_feature_duplicate">Duplicate successful campaigns</li>
+            </ul>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/dashboard.png" alt="Campaign Dashboard" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Quick Start -->
+      <section id="section-quickstart" class="kb-section">
+        <h2 data-key="kb_quickstart_title">Quick Start</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_quickstart_desc">Get started in minutes with these simple steps:</p>
+            <ol>
+              <li data-key="kb_quickstart_step1">Place <code>EmailCampaignManager.exe</code> in any folder and double-click it</li>
+              <li data-key="kb_quickstart_step2">Your browser opens at <code>http://localhost:5000</code> automatically</li>
+              <li data-key="kb_quickstart_step3">Allow through your antivirus if prompted (PyInstaller apps can trigger false positives)</li>
+              <li data-key="kb_quickstart_step4">Configure your SMTP settings</li>
+              <li data-key="kb_quickstart_step5">Import your contacts CSV</li>
+              <li data-key="kb_quickstart_step6">Create your first campaign and send!</li>
+            </ol>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/quickstart.png" alt="Quick Start" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Campaign Manager -->
+      <section id="section-campaigns" class="kb-section">
+        <h2 data-key="kb_campaigns_section_title">Campaign Manager</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_campaigns_desc">Manage all your email campaigns in one organized place.</p>
+            <h3 data-key="kb_campaigns_create_title">Create a Campaign</h3>
+            <ol>
+              <li data-key="kb_campaigns_create_step1">Click the <strong>Campaigns</strong> tab</li>
+              <li data-key="kb_campaigns_create_step2">Click <strong>➕ New Campaign</strong></li>
+              <li data-key="kb_campaigns_create_step3">Compose your email in the <strong>Compose</strong> tab</li>
+              <li data-key="kb_campaigns_create_step4">Click <strong>⚙️ Settings</strong> to set name, tags, and notes</li>
+              <li data-key="kb_campaigns_create_step5">Click <strong>💾 Save</strong> to save your progress</li>
+            </ol>
+            <h3 data-key="kb_campaigns_manage_title">Manage Campaigns</h3>
+            <ul>
+              <li data-key="kb_campaigns_search"><strong>Search:</strong> Type in the search box to find campaigns</li>
+              <li data-key="kb_campaigns_filter"><strong>Filter:</strong> Click Draft/Scheduled/Sent to filter by status</li>
+              <li data-key="kb_campaigns_edit"><strong>Edit:</strong> Click on a campaign card to open and edit it</li>
+              <li data-key="kb_campaigns_actions"><strong>Actions:</strong> Click <strong>⋮</strong> for Duplicate or Delete options</li>
+            </ul>
+            <h3 data-key="kb_campaigns_send_title">Send a Campaign</h3>
+            <ol>
+              <li data-key="kb_campaigns_send_step1">Select or create a campaign</li>
+              <li data-key="kb_campaigns_send_step2">Load your CSV file with recipients</li>
+              <li data-key="kb_campaigns_send_step3">Configure SMTP settings</li>
+              <li data-key="kb_campaigns_send_step4">Click <strong>🚀 Send Emails</strong></li>
+              <li data-key="kb_campaigns_send_step5">Statistics update automatically!</li>
+            </ol>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/campaigns.png" alt="Campaign Manager" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Templates -->
+      <section id="section-templates" class="kb-section">
+        <h2 data-key="kb_templates_section_title">Using Templates</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_templates_desc">Create powerful, reusable email templates with variables and conditional content.</p>
+            <h3 data-key="kb_templates_create_title">Create a Template</h3>
+            <ol>
+              <li data-key="kb_templates_create_step1">Click the <strong>Templates</strong> tab</li>
+              <li data-key="kb_templates_create_step2">Click <strong>➕ New Template</strong></li>
+              <li data-key="kb_templates_create_step3">Enter template name and description</li>
+              <li data-key="kb_templates_create_step4">Write your email using variables and conditions</li>
+              <li data-key="kb_templates_create_step5">Select a category (promo, newsletter, cold, follow-up)</li>
+              <li data-key="kb_templates_create_step6">Click <strong>💾 Save Template</strong></li>
+            </ol>
+            <h3 data-key="kb_templates_use_title">Use a Template</h3>
+            <ol>
+              <li data-key="kb_templates_use_step1">In the <strong>Compose</strong> tab, click <strong>📄 Load Template</strong></li>
+              <li data-key="kb_templates_use_step2">Select a template from the library</li>
+              <li data-key="kb_templates_use_step3">The subject and body are automatically filled</li>
+              <li data-key="kb_templates_use_step4">Variables will be replaced with real data from your CSV</li>
+            </ol>
+            <h3 data-key="kb_templates_syntax_title">Template Syntax</h3>
+            <ul>
+              <li data-key="kb_templates_syntax_vars"><strong>Variables:</strong> Use any column from your CSV with <code>{{`{{column_name}}`}}</code><br>Example: <code>Hello {{`{{first_name}}`}}, welcome to {{`{{company}}`}}!</code></li>
+              <li data-key="kb_templates_syntax_conditions"><strong>Conditions:</strong> Show/hide content based on data<br>Example: <code>{{`{% if company %}at {{company}}{% endif %}`}}</code></li>
+              <li data-key="kb_templates_syntax_preview"><strong>Preview:</strong> Click the preview button to see how it renders with sample data</li>
+            </ul>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/templates.png" alt="Template Editor" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: A/B Testing -->
+      <section id="section-abtesting" class="kb-section">
+        <h2 data-key="kb_abtesting_section_title">Running A/B Tests</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_abtesting_desc">Test different email variations to find what works best for your audience.</p>
+            <h3 data-key="kb_abtesting_setup_title">Set Up an A/B Test</h3>
+            <ol>
+              <li data-key="kb_abtesting_setup_step1">Create or edit a campaign</li>
+              <li data-key="kb_abtesting_setup_step2">Click <strong>⚙️ Settings</strong></li>
+              <li data-key="kb_abtesting_setup_step3">Enable <strong>A/B Test Mode</strong></li>
+              <li data-key="kb_abtesting_setup_step4">Set your split ratio (default 50/50)</li>
+              <li data-key="kb_abtesting_setup_step5">Go to <strong>Compose</strong> tab</li>
+              <li data-key="kb_abtesting_setup_step6">Enter <strong>Variant A</strong> subject and body</li>
+              <li data-key="kb_abtesting_setup_step7">Enter <strong>Variant B</strong> subject and body</li>
+              <li data-key="kb_abtesting_setup_step8">Click <strong>👁️ Preview</strong> to compare side-by-side</li>
+            </ol>
+            <h3 data-key="kb_abtesting_send_title">Send A/B Test</h3>
+            <ol>
+              <li data-key="kb_abtesting_send_step1">Load your CSV with recipients</li>
+              <li data-key="kb_abtesting_send_step2">Configure SMTP settings</li>
+              <li data-key="kb_abtesting_send_step3">Click <strong>🚀 Send A/B Test</strong></li>
+              <li data-key="kb_abtesting_send_step4">Recipients are automatically split (e.g., 50% get A, 50% get B)</li>
+              <li data-key="kb_abtesting_send_step5">View separate statistics for each variant</li>
+            </ol>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/abtesting.png" alt="A/B Testing" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Scheduling -->
+      <section id="section-scheduling" class="kb-section">
+        <h2 data-key="kb_scheduling_section_title">Scheduling Campaigns</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_scheduling_desc">Schedule campaigns for future delivery and control sending speed.</p>
+            <h3 data-key="kb_scheduling_schedule_title">Schedule for Later</h3>
+            <ol>
+              <li data-key="kb_scheduling_schedule_step1">Create or edit a campaign</li>
+              <li data-key="kb_scheduling_schedule_step2">Click <strong>⚙️ Settings</strong></li>
+              <li data-key="kb_scheduling_schedule_step3">Set <strong>Scheduled Date & Time</strong></li>
+              <li data-key="kb_scheduling_schedule_step4">Select your <strong>Timezone</strong></li>
+              <li data-key="kb_scheduling_schedule_step5">Click <strong>💾 Save</strong></li>
+              <li data-key="kb_scheduling_schedule_step6">Campaign shows ⏰ badge and will send automatically</li>
+            </ol>
+            <h3 data-key="kb_scheduling_ratelimit_title">Control Send Rate</h3>
+            <ol>
+              <li data-key="kb_scheduling_ratelimit_step1">In Campaign Settings, adjust <strong>Emails per Minute</strong> slider</li>
+              <li data-key="kb_scheduling_ratelimit_step2">Set to 0 for maximum speed (no limit)</li>
+              <li data-key="kb_scheduling_ratelimit_step3">Set to 1-60 to control delivery rate</li>
+              <li data-key="kb_scheduling_ratelimit_step4">Helps improve deliverability and avoid rate limits</li>
+            </ol>
+            <h3 data-key="kb_scheduling_pause_title">Pause & Resume</h3>
+            <ol>
+              <li data-key="kb_scheduling_pause_step1">During sending, click <strong>⏸️ Pause</strong> if needed</li>
+              <li data-key="kb_scheduling_pause_step2">Campaign state is saved automatically</li>
+              <li data-key="kb_scheduling_pause_step3">Click <strong>▶️ Resume</strong> to continue from where it stopped</li>
+              <li data-key="kb_scheduling_pause_step4">If app crashes, campaigns auto-resume on restart</li>
+            </ol>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/scheduling.png" alt="Scheduling Options" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Import Contacts -->
+      <section id="section-contacts" class="kb-section">
+        <h2 data-key="kb_contacts_title">Import Your Contacts</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_contacts_desc">Use the bundled <code>TemplateCSV.csv</code> as your starting point.</p>
+            <h3 data-key="kb_contacts_format_title">CSV Format</h3>
+            <ul>
+              <li data-key="kb_contacts_headers">Required headers (exactly): <code>Name,Email</code> separated by commas</li>
+              <li data-key="kb_contacts_encoding">Save as UTF-8 encoding</li>
+            </ul>
+            <h3 data-key="kb_contacts_example_title">Example</h3>
+            <code>
+              Name,Email<br>
+              Jane Smith,jane@example.com<br>
+              ,no-name@example.com
+            </code>
+            <p data-key="kb_contacts_empty_note">Leave Name empty if you don't have it (the default greeting will be used)</p>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/csv.png" alt="CSV Import" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: SMTP Setup -->
+      <section id="section-smtp" class="kb-section">
+        <h2 data-key="kb_smtp_title">Connect Your Email Account</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_smtp_desc">Configure your SMTP settings to send emails.</p>
+            <h3 data-key="kb_smtp_providers_title">Supported Providers</h3>
+            <ul>
+              <li data-key="kb_smtp_gmail">Gmail (use App Password with 2FA enabled)</li>
+              <li data-key="kb_smtp_outlook">Outlook/Hotmail</li>
+              <li data-key="kb_smtp_yahoo">Yahoo</li>
+              <li data-key="kb_smtp_office365">Office 365</li>
+              <li data-key="kb_smtp_custom">Custom SMTP (any provider)</li>
+            </ul>
+            <h3 data-key="kb_smtp_setup_title">Setup Steps</h3>
+            <ol>
+              <li data-key="kb_smtp_step1">Pick your provider from the dropdown</li>
+              <li data-key="kb_smtp_step2">Enter your email and password (or app password)</li>
+              <li data-key="kb_smtp_step3">Click <strong>Test Connection</strong></li>
+              <li data-key="kb_smtp_step4">On success, your password is stored securely in the system keychain</li>
+              <li data-key="kb_smtp_step5">Use the dropdown to recall saved accounts</li>
+            </ol>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/smtp.png" alt="SMTP Configuration" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Compose Message -->
+      <section id="section-compose" class="kb-section">
+        <h2 data-key="kb_compose_title">Craft Your Message</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_compose_desc">Create personalized emails with variables and templates.</p>
+            <h3 data-key="kb_compose_basics_title">Basics</h3>
+            <ul>
+              <li data-key="kb_compose_subject">Subject is required</li>
+              <li data-key="kb_compose_mode">Switch between Text and HTML modes in the editor</li>
+              <li data-key="kb_compose_attachments">Add shared attachments with <strong>Load Files</strong></li>
+            </ul>
+            <h3 data-key="kb_compose_variables_title">Using Variables</h3>
+            <ul>
+              <li data-key="kb_compose_jinja"><strong>Jinja2 syntax:</strong> <code>{{`{{first_name}}`}}</code>, <code>{{`{{email}}`}}</code>, <code>{{`{{company}}`}}</code>, or any CSV column</li>
+              <li data-key="kb_compose_legacy"><strong>Legacy syntax:</strong> <code>{name}</code> and <code>{email}</code> still supported</li>
+              <li data-key="kb_compose_conditions"><strong>Conditions:</strong> <code>{{`{% if company %}at {{company}}{% endif %}`}}</code> shows content only if field exists</li>
+              <li data-key="kb_compose_default">If Name is missing, the <strong>Default Greeting</strong> is used (e.g., "Dear Friend")</li>
+            </ul>
+            <h3 data-key="kb_compose_templates_title">Load Templates</h3>
+            <p data-key="kb_compose_templates_desc">Click <strong>📄 Load Template</strong> from the Templates tab to reuse your best messages.</p>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/compose.png" alt="Compose Email" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Send Campaign -->
+      <section id="section-send" class="kb-section">
+        <h2 data-key="kb_send_title">Send Your Campaign</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_send_desc">Send your email campaign and track progress in real-time.</p>
+            <h3 data-key="kb_send_steps_title">Steps</h3>
+            <ol>
+              <li data-key="kb_send_step1">Press <strong>🚀 Send Emails</strong></li>
+              <li data-key="kb_send_step2">Watch live logs, progress bar, and stats while the campaign runs</li>
+              <li data-key="kb_send_step3">Campaign status updates automatically</li>
+            </ol>
+            <h3 data-key="kb_send_monitoring_title">Monitoring</h3>
+            <ul>
+              <li data-key="kb_send_progress">Real-time progress bar</li>
+              <li data-key="kb_send_logs">Live logs showing each email sent</li>
+              <li data-key="kb_send_stats">Success/error statistics</li>
+              <li data-key="kb_send_pause_option">Option to pause during sending</li>
+            </ul>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/sending.png" alt="Sending Campaign" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Security -->
+      <section id="section-security" class="kb-section">
+        <h2 data-key="kb_security_title">Security</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_security_desc">Your data and credentials are protected.</p>
+            <h3 data-key="kb_security_features_title">Security Features</h3>
+            <ul>
+              <li data-key="kb_security_keychain">Passwords stored locally in system keychain (Windows Credential Manager)</li>
+              <li data-key="kb_security_local">All data stays on your computer - no cloud storage</li>
+              <li data-key="kb_security_sqlite">SQLite database for campaign storage</li>
+            </ul>
+            <h3 data-key="kb_security_remove_title">Remove Credentials</h3>
+            <p data-key="kb_security_remove_desc">To remove stored credentials: select the account and click <strong>Cancel Account</strong>.</p>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/security.png" alt="Security" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Troubleshooting -->
+      <section id="section-troubleshooting" class="kb-section">
+        <h2 data-key="kb_troubleshooting_title">Troubleshooting</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <h3 data-key="kb_troubleshooting_common_title">Common Issues</h3>
+            <h4 data-key="kb_trouble_smtp_title">SMTP Connection Failed</h4>
+            <ul>
+              <li data-key="kb_trouble_smtp_1">Use an App Password (Gmail requires 2FA + App Password)</li>
+              <li data-key="kb_trouble_smtp_2">Verify host/port for Custom SMTP</li>
+              <li data-key="kb_trouble_smtp_3">Check your internet connection</li>
+            </ul>
+            <h4 data-key="kb_trouble_csv_title">CSV Rejected</h4>
+            <ul>
+              <li data-key="kb_trouble_csv_1">Headers must be exactly <code>Name,Email</code></li>
+              <li data-key="kb_trouble_csv_2">Use comma separator (no semicolons)</li>
+              <li data-key="kb_trouble_csv_3">Save as UTF-8 encoding</li>
+            </ul>
+            <h4 data-key="kb_trouble_attachments_title">Attachments Corrupted</h4>
+            <ul>
+              <li data-key="kb_trouble_attachments_1">All file types supported (PDF, DOCX, images, etc.)</li>
+              <li data-key="kb_trouble_attachments_2">Files are encoded as base64 automatically</li>
+              <li data-key="kb_trouble_attachments_3">Check recipient's email client settings</li>
+            </ul>
+            <h4 data-key="kb_trouble_icon_title">Windows Icon Looks Old</h4>
+            <p data-key="kb_trouble_icon_desc">Delete or rename the old <code>EmailCampaignManager.exe</code> and copy the new one (Windows may cache icons).</p>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/troubleshooting.png" alt="Troubleshooting" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Support -->
+      <section id="section-support" class="kb-section">
+        <h2 data-key="kb_support_title">Support & Contact</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_support_desc">Need help, have questions, or just want to say hi? 😊</p>
+            <h3 data-key="kb_support_contact_title">Get in Touch</h3>
+            <p data-key="kb_support_contact_desc">Click the button below to contact me:</p>
+            <a href="https://giovyangy.github.io/Lebenlauf/index.html#kontakt" target="_blank" class="kb-contact-btn" data-key="kb_support_contact_btn">Contact Me</a>
+            <h3 data-key="kb_support_docs_title">Documentation</h3>
+            <ul>
+              <li data-key="kb_support_modules"><code>MODULES_REFERENCE.md</code> - Complete technical documentation</li>
+              <li data-key="kb_support_version"><code>Version.md</code> - Version history and roadmap</li>
+              <li data-key="kb_support_template_guide"><code>TEMPLATE_ENGINE_GUIDE.md</code> - Template syntax guide</li>
+            </ul>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/support.png" alt="Support" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="./template/script.js"></script>
+</body>
+
+</html>
