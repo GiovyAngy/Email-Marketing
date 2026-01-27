@@ -196,11 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       kb_support_desc: "Need help, have questions, or just want to say hi? 😊",
       kb_support_contact_title: "Get in Touch",
       kb_support_contact_desc: "Click the button below to contact me:",
-      kb_support_contact_btn: "Contact Me",
-      kb_support_docs_title: "Documentation",
-      kb_support_modules: "MODULES_REFERENCE.md - Complete technical documentation",
-      kb_support_version: "Version.md - Version history and roadmap",
-      kb_support_template_guide: "TEMPLATE_ENGINE_GUIDE.md - Template syntax guide"
+      kb_support_contact_btn: "Contact Me"
     },
     de: {
       kb_nav_title: "Abschnitte",
@@ -397,11 +393,7 @@ document.addEventListener("DOMContentLoaded", function () {
       kb_support_desc: "Benötigen Sie Hilfe, haben Fragen oder möchten einfach nur Hallo sagen? 😊",
       kb_support_contact_title: "Kontakt aufnehmen",
       kb_support_contact_desc: "Klicken Sie auf die Schaltfläche unten, um mich zu kontaktieren:",
-      kb_support_contact_btn: "Kontaktieren Sie mich",
-      kb_support_docs_title: "Dokumentation",
-      kb_support_modules: "MODULES_REFERENCE.md - Vollständige technische Dokumentation",
-      kb_support_version: "Version.md - Versionshistorie und Roadmap",
-      kb_support_template_guide: "TEMPLATE_ENGINE_GUIDE.md - Vorlagensyntax-Leitfaden"
+      kb_support_contact_btn: "Kontaktieren Sie mich"
     },
     it: {
       kb_nav_title: "Sezioni",
@@ -598,11 +590,7 @@ document.addEventListener("DOMContentLoaded", function () {
       kb_support_desc: "Hai bisogno di aiuto, domande o vuoi solo salutare? 😊",
       kb_support_contact_title: "Contattami",
       kb_support_contact_desc: "Fai clic sul pulsante qui sotto per contattarmi:",
-      kb_support_contact_btn: "Contattami",
-      kb_support_docs_title: "Documentazione",
-      kb_support_modules: "MODULES_REFERENCE.md - Documentazione tecnica completa",
-      kb_support_version: "Version.md - Cronologia versioni e roadmap",
-      kb_support_template_guide: "TEMPLATE_ENGINE_GUIDE.md - Guida sintassi template"
+      kb_support_contact_btn: "Contattami"
     }
   };
 
