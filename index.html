@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Email Campaign Manager – Knowledge Base</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,6 +36,9 @@
         <li><a href="#" class="kb-nav-link" data-section="quickstart" data-key="kb_nav_quickstart">Quick Start</a></li>
         <li><a href="#" class="kb-nav-link" data-section="campaigns" data-key="kb_nav_campaigns">Campaign Manager</a></li>
         <li><a href="#" class="kb-nav-link" data-section="templates" data-key="kb_nav_templates">Templates</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="signature" data-key="kb_nav_signature">Signature & Privacy</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="validation" data-key="kb_nav_validation">CSV Validation</a></li>
+        <li><a href="#" class="kb-nav-link" data-section="deliverability" data-key="kb_nav_deliverability">Deliverability Check</a></li>
         <li><a href="#" class="kb-nav-link" data-section="abtesting" data-key="kb_nav_abtesting">A/B Testing</a></li>
         <li><a href="#" class="kb-nav-link" data-section="scheduling" data-key="kb_nav_scheduling">Scheduling</a></li>
         <li><a href="#" class="kb-nav-link" data-section="contacts" data-key="kb_nav_contacts">Import Contacts</a></li>
@@ -62,10 +65,26 @@
       <!-- Section: Introduction -->
       <section id="section-intro" class="kb-section active">
         <h2 data-key="kb_intro_title">Introduction</h2>
-        <p data-key="kb_intro_desc">Email Campaign Manager v1.4 is a powerful desktop application for sending beautiful, personalized email campaigns. Manage campaigns, schedule sends, run A/B tests, and use advanced templates - all in one professional tool!</p>
+        <p data-key="kb_intro_desc">Email Campaign Manager v1.5 is a powerful desktop application for sending beautiful, personalized email campaigns. Manage campaigns, schedule sends, run A/B tests, use advanced templates, add professional signatures, and validate your recipients - all in one professional tool!</p>
         <div class="kb-content-row">
           <div class="kb-text-content">
             <h3 data-key="kb_features_title">Key Features</h3>
+            <h4 data-key="kb_validation_title">🛡️ CSV Validation & Security (v1.5)</h4>
+            <ul>
+              <li data-key="kb_feature_dryrun">Dry-run validation before sending</li>
+              <li data-key="kb_feature_email_check">Email format validation with regex</li>
+              <li data-key="kb_feature_duplicates">Duplicate detection and removal</li>
+              <li data-key="kb_feature_clean_csv">Automatic CSV cleaning with one click</li>
+              <li data-key="kb_feature_threshold">Warning threshold for safe sending</li>
+            </ul>
+            <h4 data-key="kb_signature_title">✍️ Signature & Privacy Policy (v1.4.1)</h4>
+            <ul>
+              <li data-key="kb_feature_signature">Email signatures in Text and HTML format</li>
+              <li data-key="kb_feature_privacy">Privacy policy and unsubscribe links</li>
+              <li data-key="kb_feature_checkbox">Easy checkbox selection in all email modes</li>
+              <li data-key="kb_feature_preview_sig">HTML preview for signatures</li>
+              <li data-key="kb_feature_gdpr">GDPR compliance ready</li>
+            </ul>
             <h4 data-key="kb_template_engine_title">🎨 Template Engine (v1.4)</h4>
             <ul>
               <li data-key="kb_feature_template_vars">Advanced variables with Jinja2 syntax</li>
@@ -191,6 +210,181 @@
           </div>
           <div class="kb-image-content">
             <img src="img/templates.png" alt="Template Editor" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Signature & Privacy Policy (v1.4.1) -->
+      <section id="section-signature" class="kb-section">
+        <h2 data-key="kb_signature_section_title">Email Signature & Privacy Policy</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_signature_desc">Add professional signatures and privacy policy links to your emails automatically. Perfect for GDPR compliance and brand consistency.</p>
+            <h3 data-key="kb_signature_configure_title">Configure Your Signature</h3>
+            <ol>
+              <li data-key="kb_signature_configure_step1">Click the <strong>⚙️ Settings</strong> tab</li>
+              <li data-key="kb_signature_configure_step2">In the <strong>Email Signature</strong> section, enter your signature</li>
+              <li data-key="kb_signature_configure_step3">Use the <strong>Text</strong> field for plain text emails</li>
+              <li data-key="kb_signature_configure_step4">Use the <strong>HTML</strong> field for styled signatures with formatting</li>
+              <li data-key="kb_signature_configure_step5">Click <strong>👁️ Preview HTML Signature</strong> to see how it looks</li>
+              <li data-key="kb_signature_configure_step6">Click <strong>💾 Save Settings</strong></li>
+            </ol>
+            <h3 data-key="kb_privacy_configure_title">Configure Privacy Policy/Unsubscribe</h3>
+            <ol>
+              <li data-key="kb_privacy_configure_step1">In the <strong>⚙️ Settings</strong> tab, scroll to <strong>Privacy Policy</strong> section</li>
+              <li data-key="kb_privacy_configure_step2">Add your unsubscribe link and privacy policy text</li>
+              <li data-key="kb_privacy_configure_step3">For HTML emails, use <code>&lt;a&gt;</code> tags for clickable links</li>
+              <li data-key="kb_privacy_configure_step4">Example: <code>&lt;a href="https://yoursite.com/unsubscribe"&gt;Unsubscribe&lt;/a&gt;</code></li>
+              <li data-key="kb_privacy_configure_step5">Click <strong>💾 Save Settings</strong></li>
+            </ol>
+            <h3 data-key="kb_signature_use_title">Use in Your Emails</h3>
+            <ol>
+              <li data-key="kb_signature_use_step1">In the <strong>Compose</strong> tab, find the checkboxes above the email editor</li>
+              <li data-key="kb_signature_use_step2">Check <strong>✅ Include Signature</strong> to add your signature</li>
+              <li data-key="kb_signature_use_step3">Check <strong>✅ Include Privacy Policy</strong> to add privacy info</li>
+              <li data-key="kb_signature_use_step4">For A/B tests, each variant has its own checkboxes</li>
+              <li data-key="kb_signature_use_step5">The signature and privacy are automatically appended to the email body when sending</li>
+            </ol>
+            <div class="kb-tip" data-key="kb_signature_tip">
+              <strong>💡 Tip:</strong> The signature is added at the bottom of your email body with a separator line. HTML versions are used for HTML emails, text versions for plain text emails!
+            </div>CSV Validation & Security (v1.5) -->
+      <section id="section-validation" class="kb-section">
+        <h2 data-key="kb_validation_section_title">CSV Validation & Security</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_validation_desc">Validate your CSV files before sending to prevent errors and ensure deliverability. The dry-run validation checks email formats, finds duplicates, and can even remove invalid entries automatically.</p>
+            <h3 data-key="kb_validation_run_title">Run a Dry-Run Validation</h3>
+            <ol>
+              <li data-key="kb_validation_run_step1">Load your CSV file in the <strong>Compose</strong> tab</li>
+              <li data-key="kb_validation_run_step2">Click the <strong>🔍 Dry-Run Validation</strong> button (appears under "Load CSV")</li>
+              <li data-key="kb_validation_run_step3">Select validation options:
+                <ul>
+                  <li><strong>✓ Check Email Format:</strong> Validates email addresses using regex</li>
+                  <li><strong>⚠️ Check Duplicates:</strong> Finds duplicate email addresses</li>
+                  <li><strong>📋 Check Missing Fields:</strong> Checks for missing names or template variables</li>
+                  <li><strong>🔍 Check SMTP Existence:</strong> Verifies email existence (slow, experimental)</li>
+                </ul>
+              </li>
+              <li data-key="kb_validation_run_step4">Click <strong>▶️ Run Validation</strong></li>
+              <li data-key="kb_validation_run_step5">Review the detailed report with errors and warnings</li>
+            </ol>
+            <h3 data-key="kb_validation_clean_title">Clean Your CSV Automatically</h3>
+            <ol>
+              <li data-key="kb_validation_clean_step1">After running validation, if issues are found, the <strong>✅ Use Clean CSV</strong> button appears</li>
+              <li data-key="kb_validation_clean_step2">Click <strong>✅ Use Clean CSV</strong> to apply filters</li>
+              <li data-key="kb_validation_clean_step3">The system removes:
+                <ul>
+                  <li>Invalid email addresses (wrong format)</li>
+                  <li>Duplicate emails (keeps only first occurrence)</li>
+                </ul>
+              </li>
+              <li data-key="kb_validation_clean_step4">The CSV is updated automatically with a <strong>"✓ Cleaned"</strong> badge</li>
+              <li data-key="kb_validation_clean_step5">You can now send to clean, valid recipients only!</li>
+            </ol>
+            <h3 data-key="kb_validation_threshold_title">Configure Warning Threshold</h3>
+            <ol>
+              <li data-key="kb_validation_threshold_step1">Go to <strong>⚙️ Settings</strong> tab</li>
+              <li data-key="kb_validation_threshold_step2">Find the <strong>Validation & Security</strong> section</li>
+              <li data-key="kb_validation_threshold_step3">Set your warning threshold (default: 100 recipients)</li>
+              <li data-key="kb_validation_threshold_step4">Choose default validation options for dry-run</li>
+              <li data-key="kb_validation_threshold_step5">Click <strong>💾 Save Settings</strong></li>
+            </ol>
+            <div class="kb-tip" data-key="kb_validation_tip">
+              <strong>💡 Tip:</strong> Always run a dry-run validation before sending large campaigns! The clean CSV feature saves time by automatically filtering out problematic addresses. When you exceed the warning threshold, you'll be asked to confirm before sending.
+            </div>
+            <div class="kb-warning" data-key="kb_validation_warning">
+              <strong>⚠️ Warning:</strong> SMTP existence checking is experimental and slow. Some email servers block this type of verification. Use it only when absolutely necessary.
+            </div>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/validation.png" alt="CSV Validation" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Deliverability Check (v1.6) -->
+      <section id="section-deliverability" class="kb-section">
+        <h2 data-key="kb_deliverability_section_title">Deliverability Check (Offline)</h2>
+        <div class="kb-content-row">
+          <div class="kb-text-content">
+            <p data-key="kb_deliverability_desc">Analyze your email content offline to improve inbox placement and avoid spam filters. Get instant feedback on subject lines, HTML structure, attachments, and content quality.</p>
+            <h3 data-key="kb_deliverability_analyze_title">Run Deliverability Analysis</h3>
+            <ol>
+              <li data-key="kb_deliverability_analyze_step1">Compose your email in the <strong>Compose</strong> tab</li>
+              <li data-key="kb_deliverability_analyze_step2">Click the <strong>📊 Check Deliverability</strong> button</li>
+              <li data-key="kb_deliverability_analyze_step3">Review your <strong>Deliverability Score</strong> (0-100):
+                <ul>
+                  <li><strong>90-100 (Excellent):</strong> Ready to send!</li>
+                  <li><strong>75-89 (Good):</strong> Minor improvements recommended</li>
+                  <li><strong>60-74 (Fair):</strong> Several issues to fix</li>
+                  <li><strong>0-59 (Poor):</strong> High spam risk, needs work</li>
+                </ul>
+              </li>
+              <li data-key="kb_deliverability_analyze_step4">Check the <strong>Top Suggestions</strong> for quick wins</li>
+              <li data-key="kb_deliverability_analyze_step5">Expand each category for detailed issues and fixes</li>
+            </ol>
+            <h3 data-key="kb_deliverability_checks_title">What Gets Checked</h3>
+            <ul>
+              <li data-key="kb_deliverability_subject_check"><strong>📧 Subject Line:</strong>
+                <ul>
+                  <li>Spam trigger words (FREE, URGENT, BUY NOW, etc.)</li>
+                  <li>Optimal length (30-50 characters recommended)</li>
+                  <li>Excessive capitalization or special characters</li>
+                </ul>
+              </li>
+              <li data-key="kb_deliverability_html_check"><strong>🎨 HTML Structure:</strong>
+                <ul>
+                  <li>Images missing alt text</li>
+                  <li>Broken or suspicious links</li>
+                  <li>HTML validation errors</li>
+                  <li>Text-to-HTML ratio (should be >30%)</li>
+                  <li>CSS inline recommendations</li>
+                </ul>
+              </li>
+              <li data-key="kb_deliverability_attachments_check"><strong>📎 Attachments:</strong>
+                <ul>
+                  <li>File size warnings (>5MB flagged)</li>
+                  <li>Too many attachments (>3)</li>
+                  <li>Suspicious file types (.exe, .bat, .scr)</li>
+                </ul>
+              </li>
+              <li data-key="kb_deliverability_copy_check"><strong>✍️ Content & Copy:</strong>
+                <ul>
+                  <li>Optimal email length</li>
+                  <li>Link-to-text ratio</li>
+                  <li>Excessive exclamation marks</li>
+                  <li>Clear call-to-action presence</li>
+                </ul>
+              </li>
+            </ul>
+            <h3 data-key="kb_deliverability_tips_title">Best Practices</h3>
+            <ul>
+              <li data-key="kb_deliverability_tip1">Keep subject lines between 30-50 characters for mobile visibility</li>
+              <li data-key="kb_deliverability_tip2">Avoid spam words: FREE, URGENT, WINNER, GUARANTEE, CLICK HERE</li>
+              <li data-key="kb_deliverability_tip3">Add descriptive alt text to all images</li>
+              <li data-key="kb_deliverability_tip4">Keep attachments under 5MB (use cloud links for large files)</li>
+              <li data-key="kb_deliverability_tip5">Maintain a good text-to-HTML ratio (at least 30% text)</li>
+              <li data-key="kb_deliverability_tip6">Test links before sending</li>
+              <li data-key="kb_deliverability_tip7">Use a clear, single call-to-action</li>
+              <li data-key="kb_deliverability_tip8">Limit special characters and emojis in subject lines</li>
+            </ul>
+            <div class="kb-tip" data-key="kb_deliverability_tip">
+              <strong>💡 Tip:</strong> Run deliverability check after composing your email and before sending. Fix all "error" level issues first, then address warnings. A score above 75 is generally safe to send.
+            </div>
+            <div class="kb-success" data-key="kb_deliverability_success">
+              <strong>✅ Privacy:</strong> All analysis is done 100% offline on your machine. No data is sent to third parties, ensuring complete privacy and instant results.
+            </div>
+          </div>
+          <div class="kb-image-content">
+            <img src="img/deliverability.png" alt="Deliverability Check" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: 
+          </div>
+          <div class="kb-image-content">
+            <img src="img/signature.png" alt="Signature Settings" onerror="this.style.display='none'">
           </div>
         </div>
       </section>

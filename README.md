@@ -1,8 +1,67 @@
-# Email Campaign Manager v1.4
+# 📧 Email Campaign Manager v1.6
 
-Send beautiful, personalized campaigns in minutes. Manage campaigns, schedule sends, run A/B tests, and use powerful templates - all in one professional tool!
+[![Version](https://img.shields.io/badge/version-1.6-blue.svg)](https://github.com/GiovyAngy/Email-Marketing)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Documentation](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://giovyangy.github.io/Email-Marketing/)
 
-## 🆕 What's New in v1.4
+**Professional desktop email marketing tool** - Send beautiful, personalized campaigns in minutes. Manage campaigns, schedule sends, run A/B tests, validate your emails, and optimize deliverability - all in one powerful application!
+
+## 📥 Download
+
+This repository contains the **source code** for Email Campaign Manager. 
+
+**To use the application**, download the ready-to-use executable:
+
+➡️ **[Download EmailCampaignManager.exe](https://github.com/GiovyAngy/Email-Marketing/releases/latest)** ⬅️
+
+> 💡 **No installation required** - Just download and run the `.exe` file!
+
+## 📚 Documentation
+
+For complete guides, tutorials, and feature documentation, visit:
+
+🔗 **[Official Documentation](https://giovyangy.github.io/Email-Marketing/)**
+
+---
+
+## ✨ Features Overview
+
+## 🆕 What's New in v1.6
+
+### 📊 Deliverability Tools OFFLINE (v1.6)
+- **Subject line analysis** with spam word detection
+- **Subject length check** for optimal open rates (30-50 chars recommended)
+- **Excessive capitalization** and special character detection
+- **HTML structure validation** for email clients
+- **Image alt text checker** for accessibility
+- **Broken link detection** and suspicious URLs
+- **Text-to-HTML ratio** analysis
+- **Attachment size warnings** (>5MB flagged)
+- **Suspicious file type detection** (.exe, .bat, etc.)
+- **Content quality tips** for better engagement
+- **Deliverability score** (0-100) with grade (Excellent/Good/Fair/Poor)
+- **Actionable suggestions** for improving inbox placement
+- **100% offline** - no data sent to third parties
+
+### 🛡️ CSV Validation & Security (v1.5)
+- **Dry-Run validation** with one click before sending
+- **Email format check** with regex validation
+- **Duplicate detection** to avoid sending multiple emails to same address
+- **Missing fields check** for name and template variables
+- **SMTP existence verification** (optional, experimental)
+- **Detailed reports** with errors, warnings, and statistics
+- **Download report** as .txt file for record-keeping
+- **Warning threshold** to prevent accidental mass sends (default: 100 recipients)
+- **Confirmation modal** when exceeding threshold
+- **Customizable validation options** in Settings
+
+### ✍️ Email Signature & Privacy Policy (v1.4.1)
+- **Default signature** support in Text and HTML format
+- **Privacy policy/unsubscribe** links for GDPR compliance
+- **Checkbox selection** in Compose, Campaigns, and A/B Tests
+- **Automatic append** to email body (with separator for HTML)
+- **Settings panel** for easy configuration
+- **Help button** with link to online documentation
 
 ### 🎨 Template Engine (v1.4)
 - **Advanced variables** with Jinja2 syntax: `{{first_name}}`, `{{company}}`, `{{email}}`
@@ -39,6 +98,56 @@ Send beautiful, personalized campaigns in minutes. Manage campaigns, schedule se
 ## Quick Start
 - Place `EmailCampaignManager.exe` in any folder and double-click it.
 - Your browser opens at `http://localhost:5000` automatically. Allow it through your antivirus if prompted (PyInstaller apps can trigger false positives).
+
+## � Check Deliverability (NEW in v1.6!)
+
+### Analyze Your Email Before Sending
+1. Compose your email in the **Compose** tab
+2. Click **📊 Check Deliverability** button (under CSV section)
+3. View comprehensive analysis:
+   - 📧 **Subject Line**: Spam words, length, capitalization
+   - 🎨 **HTML Structure**: Images, links, text ratio
+   - 📎 **Attachments**: Size, file types
+   - ✍️ **Content**: Length, call-to-action, copy quality
+4. Review your **Deliverability Score** (0-100)
+5. Follow **Top Suggestions** to improve inbox placement
+6. Expand each section for detailed issues and fixes
+
+### Understanding the Score
+- **90-100 (Excellent)** 🌟 - Ready to send!
+- **75-89 (Good)** 👍 - Minor improvements recommended
+- **60-74 (Fair)** ⚠️ - Several issues to fix
+- **0-59 (Poor)** ❌ - High spam risk, needs work
+
+### Pro Tips
+- Keep subject lines between 30-50 characters
+- Avoid spam words like "FREE", "URGENT", "BUY NOW"
+- Add alt text to all images
+- Keep attachments under 5MB
+- Maintain good text-to-HTML ratio
+- Use clear call-to-action
+
+## 🔍 Using CSV Validation (v1.5)
+
+### Run a Dry-Run Before Sending
+1. Load your CSV file in the **Compose** tab
+2. Click **🔍 Dry-Run Validation** button (appears under CSV load)
+3. Select validation options:
+   - ✓ Check Email Format
+   - ⚠️ Check Duplicates
+   - 📋 Check Missing Fields
+   - 🔍 Check SMTP Existence (slow)
+4. Click **▶️ Run Validation**
+5. Review the report and fix any errors
+6. **NEW**: Click **✅ Use Clean CSV** to automatically remove invalid/duplicate emails
+7. Download the full report for your records
+
+### Configure Warning Threshold
+1. Go to **Settings** tab
+2. Find **Validation & Security** section
+3. Set your preferred warning threshold (default: 100)
+4. Choose default validation options
+5. Click **💾 Save Settings**
 
 ## 📊 Using Campaign Manager (NEW!)
 
@@ -156,6 +265,30 @@ Send beautiful, personalized campaigns in minutes. Manage campaigns, schedule se
 - **Load templates** from the Templates tab to reuse your best messages.
 - Switch between Text and HTML modes in the editor.
 
+## ✍️ Add Signature & Privacy Policy (NEW in v1.4.1!)
+
+### Configure Your Signature
+1. Click the **⚙️ Settings** tab
+2. Enter your signature in the **Text** field (for plain text emails)
+3. Optionally, add an **HTML** version for styled emails
+4. Click **💾 Save Settings**
+
+### Configure Privacy Policy/Unsubscribe
+1. In the **⚙️ Settings** tab, scroll to Privacy Policy section
+2. Add your unsubscribe link and privacy policy text
+3. For HTML emails, use `<a>` tags for clickable links
+4. Click **💾 Save Settings**
+
+### Use in Emails
+1. In the **Compose** tab, find the checkboxes above the email editor:
+   - ✅ **Include Signature** - Adds your signature at the end
+   - ✅ **Include Privacy Policy** - Adds privacy/unsubscribe info
+2. Check the boxes you want to include
+3. For A/B tests, each variant has its own checkboxes
+4. The signature and privacy are automatically appended when sending
+
+💡 **Tip**: HTML versions are used for HTML emails, text versions for plain text emails!
+
 ## Send
 - Press **🚀 Send Emails**.
 - Watch live logs, progress bar, and stats while the campaign runs.
@@ -169,16 +302,72 @@ Send beautiful, personalized campaigns in minutes. Manage campaigns, schedule se
 - CSV rejected: headers must be exactly `Name,Email` with comma separator (no semicolons).
 - Windows icon looks old: delete or rename the old `EmailCampaignManager.exe` and copy the new one (Windows may cache icons).
 
-## Support & Contact
+## 📞 Support & Contact
 
-Need help, have questions, or just want to say hi? 😊  
-Click the badge below to get in touch:
+Need help or have questions? Get in touch with the developer:
 
-[![Contact](https://img.shields.io/badge/Contact-Get%20in%20touch-blue?style=for-the-badge)](https://giovyangy.github.io/Lebenlauf/index.html#kontakt)
+[![Contact Developer](https://img.shields.io/badge/Contact-Developer-blue?style=for-the-badge&logo=person)](https://giovyangy.github.io/Lebenlauf/index.html#kontakt)
 
+📚 **Full Documentation**: [https://giovyangy.github.io/Email-Marketing/](https://giovyangy.github.io/Email-Marketing/)
 
-## Included Files
-- `EmailCampaignManager.exe` — portable app.
-- `TemplateCSV.csv` — ready-to-use contact template.
+💡 **In-App Help**: Click the **❓ Help** button in the top-right corner for quick guides
+
+---
+
+## 📦 Repository Contents
+
+This repository includes:
+- 📂 **Source Code** - Python/Flask backend and JavaScript frontend
+- 📄 **TemplateCSV.csv** - Ready-to-use contact template
+- 🛠️ **Build Scripts** - PyInstaller configuration for creating the `.exe`
+- 📖 **Documentation Files** - README, changelog, and version history
+
+**For the compiled application**, see [Releases](https://github.com/GiovyAngy/Email-Marketing/releases)
+
+---
+
+## 🛠️ Development
+
+<details>
+<summary>Build from Source</summary>
+
+### Requirements
+- Python 3.12+
+- All dependencies in `backend/requirements.txt`
+
+### Build Steps
+```bash
+cd backend
+pip install -r requirements.txt
+python build_exe.bat
+```
+
+The executable will be created in `backend/dist/EmailCampaignManager.exe`
+
+</details>
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) file for details
+
+## 👨‍💻 Author
+
+**Giovanni Angileri**
+
+- Portfolio: [giovyangy.github.io](https://giovyangy.github.io/Lebenlauf/)
+- GitHub: [@GiovyAngy](https://github.com/GiovyAngy)
+- Contact: [Get in touch](https://giovyangy.github.io/Lebenlauf/index.html#kontakt)
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if you find it useful!**
+
+[Download](https://github.com/GiovyAngy/Email-Marketing/releases) • [Documentation](https://giovyangy.github.io/Email-Marketing/) • [Report Bug](https://github.com/GiovyAngy/Email-Marketing/issues)
+
+</div>
 
 
